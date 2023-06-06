@@ -1,3 +1,4 @@
+//
 function handleProduct(productId: number | string | undefined) {
   console.log(`ID: ${productId}`);
 
@@ -10,6 +11,7 @@ function handleProduct(productId: number | string | undefined) {
   // we have to NARROW the type
   // for primitive - i.e. built into JS we can use typeof
   if (typeof productId === "string") {
+    //  if( 'toLocaleUpperCase' in productId){
     productId.toLocaleUpperCase();
   } else {
     productId.toFixed(2);
