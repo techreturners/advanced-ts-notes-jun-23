@@ -1,3 +1,14 @@
-import { add } from './calc';
+// type inference
+const someObject = { thing: "sdj" };
 
-console.log(`2 plus 2 is ${add(2, 2)}`);
+const arr: string[] = [];
+
+someObject.thing = "dj";
+
+type ProductResponse = {
+  id: string;
+  amount: number;
+  price: number;
+};
+
+fetch("myapi.com/get/327897");
